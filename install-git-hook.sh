@@ -24,7 +24,7 @@ rm -rf ${gitResharperFolder} # Delete any old versions
 mkdir -p ${gitResharperFolder}
 echo "Extracting into ${gitResharperFolder}"
 unzip ${outFile} -d ${gitResharperFolder}
-echo "Adding pre-commit hook"
+echo "Adding pre-commit hook from ${preCommitHookUrl}"
 curl -s ${preCommitHookUrl} > ${preCommitFile}
 
 echo "Marking as executable"
